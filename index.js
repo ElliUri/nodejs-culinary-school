@@ -20,6 +20,10 @@ http.createServer(function(req, res) {
             console.log('about us');
             staticFile(res, './public/html/about.html',".html");
         break;
+        case '/admissions':
+            console.log('admissions');
+            staticFile(res, './public/html/admissions.html',".html");
+        break;
 
             default: 
             const extname = String(path.extname(url)).toLocaleLowerCase();
